@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+figure {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    /* Ensure figures can receive focus (even before JS adds tabindex) */
+    cursor: pointer; 
+    
+    /* Smooth transitions for interactive effects */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    
+    /* Remove default outline to replace it with a custom, clear focus style */
+    outline: none; 
+}
+
+figure img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent layout */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block;
+    border-radius: 5px;
+}
+
+figcaption {
+    padding: 10px 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* REQUIRED: Visual effect for onmouseover (mouse movement) and onfocus (keyboard access) */
+.highlight,
+figure:focus {
+    transform: scale(1.05); /* Slightly enlarge the figure */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border-color: #007bff; /* Change border color for visual feedback */
+}
+
+/* Explicit and accessible focus indicator (for keyboard users) */
+figure:focus {
+    /* Use a clear outline style for high visibility when tabbed to */
+    box-shadow: 0 0 0 4px #28a745; 
+}

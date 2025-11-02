@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="setupGallery()">
+
+    <h1>My Accessible Photo Gallery</h1>
+    
+    <div id="gallery">
+        <figure 
+            id="photo1"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p1.jpg" alt="Two large hot air balloons soaring over the dry, rocky landscape of Cappadocia at sunrise.">
+            <figcaption>Cappadocia Balloons</figcaption>
+        </figure>
+
+        <figure 
+            id="photo2"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p2.jpg" alt="An African elephant showering itself with red dust and soil using its trunk in a dry savanna.">
+            <figcaption>Elephant Dusting</figcaption>
+        </figure>
+
+        <figure 
+            id="photo3"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p3.jpg" alt="A dark and misty scene inside a dense forest of tall, straight pine trees.">
+            <figcaption>Misty Pine Forest</figcaption>
+        </figure>
+
+        <figure 
+            id="photo4"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p4.jpg" alt="A vibrant scarlet ibis bird with its bright pink wings fully spread, standing on a branch.">
+            <figcaption>Scarlet Ibis</figcaption>
+        </figure>
+
+        <figure 
+            id="photo5"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p6.jpg" alt="Aerial view of two people in a transparent kayak over crystal-clear turquoise ocean water and coral reefs.">
+            <figcaption>Clear Water </figcaption> 
+        </figure>
+
+        <figure 
+            id="photo6"
+            onmouseover="applyHighlight(this)"
+            onmouseleave="removeHighlight(this)"
+            onfocus="handleFocus(this)"
+            onblur="handleBlur(this)">
+            <img src="p5.jpg" alt="Multiple manta rays swimming near the surface of a large, deep blue aquarium with many small fish.">
+            <figcaption>Deep Blue Aquarium</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
